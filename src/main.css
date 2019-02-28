@@ -5,3 +5,14 @@ body {
 * {
     box-sizing: border-box;
 }
+
+li {
+    border: solid black 2px;
+    list-style: none;
+    width: 100px;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
