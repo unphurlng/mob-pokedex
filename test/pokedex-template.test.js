@@ -1,3 +1,4 @@
+import makePokedexTemplate from '../src/make-pokedex-template.js';
 const test = QUnit.test;
 
 QUnit.module('POKEDEX TEMPLATE');
@@ -8,17 +9,6 @@ const pokemon = {
     attack: 49,
     hp: 49
 };
-
-function makePokedexTemplate(pokemon) {
-    return `
-        <li>
-            <p>${pokemon.name}</p>
-            <img src="${pokemon.url_image}">
-            <p>${pokemon.attack}</p>
-            <p>${pokemon.hp}</p>
-        </li>
-    `;
-}
 
 test('dynamically populate pokedex to browser', assert => {
     //arrange
@@ -33,5 +23,5 @@ test('dynamically populate pokedex to browser', assert => {
     //act
     const result = makePokedexTemplate(pokemon);
     //assert
-    assert.equal(result, expected);
+    assert.htmlEqual(result, expected);
 });
