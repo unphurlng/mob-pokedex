@@ -1,7 +1,7 @@
-export default function makePokedexTemplate(pokemon) {
+export function makePokedexTemplate(pokemon) {
     const html = `
         <li>
-            <p>${pokemon.name}</p>
+            <p>${pokemon.pokemon}</p>
             <img src="${pokemon.url_image}">
             <p>${pokemon.attack}</p>
             <p>${pokemon.hp}</p>
@@ -11,4 +11,13 @@ export default function makePokedexTemplate(pokemon) {
     template.innerHTML = html;
     const dom = template.content;
     return dom;
+}
+
+const pokedexGallery = document.getElementById('pokedex-gallery');
+
+export default function loadPokedex(pokedex) {
+    pokedex.forEach(pokemon => {
+        const dom = makePokedexTemplate(pokemon);
+        pokedexGallery.appendChild(dom);
+    });
 }

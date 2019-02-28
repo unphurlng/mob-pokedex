@@ -1,10 +1,10 @@
-import makePokedexTemplate from '../src/make-pokedex-template.js';
+import { makePokedexTemplate } from '../src/make-pokedex-template.js';
 const test = QUnit.test;
 
 QUnit.module('POKEDEX TEMPLATE');
 
 const pokemon = {
-    name: 'bulbasaur',
+    pokemon: 'bulbasaur',
     url_image: 'http://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png',
     attack: 49,
     hp: 49
