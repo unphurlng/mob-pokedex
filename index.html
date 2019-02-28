@@ -4,11 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/main.css">
+    <link rel="stylesheet" href="./src/type-color.css">
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
     <header><h1>Pokedex</h1></header>
+
+    <section id="paging">
+        <button id="previous-button">&lt;Previous</button>
+
+        <div>
+            Page
+            <span id="current-page">1</span>
+            of
+            <span id="total-pages">100</span>
+        </div>
+
+        <button id="next-button">Next&gt;</button>
+    </section>
 
     <main>
         <ul id="pokedex-gallery">

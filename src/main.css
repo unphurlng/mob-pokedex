@@ -1,18 +1,49 @@
 body {
-    font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
-}
+    font-family: 'Share Tech Mono', monospace;}
 
 * {
     box-sizing: border-box;
 }
 
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+}
+
 li {
+
     border: solid black 2px;
     list-style: none;
-    width: 100px;
+    width: 175px;
     text-align: center;
+    margin: 4px;
 }
 
 img {
     width: 100%;
+    background: white;
 }
+
+p {
+    display:flex;
+    justify-content: space-around;
+    display: inline-block;
+    margin-left: 8px;
+}
+
+header {
+    background-image: url('https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwitgeG-st_gAhVoiFQKHSXqD5oQjRx6BAgBEAU&url=%2Furl%3Fsa%3Di%26source%3Dimages%26cd%3D%26ved%3D%26url%3Dhttps%253A%252F%252Fwall.alphacoders.com%252Fbig.php%253Fi%253D592678%26psig%3DAOvVaw3AZoT6_nL2mJogA9B_2bHt%26ust%3D1551476326760202&psig=AOvVaw3AZoT6_nL2mJogA9B_2bHt&ust=1551476326760202');
+
+    background-image: url(https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwitgeG-st_gAhVoiFQKHSXqD5oQjRx6BAgBEAU&url=%2Furl%3Fsa%3Di%26source%3Dimages%26cd%3D%26ved%3D%26url%3Dhttps%253A%252F%252Fwall.alphacoders.com%252Fbig.php%253Fi%253D592678%26psig%3DAOvVaw3AZoT6_nL2mJogA9B_2bHt%26ust%3D1551476326760202&psig=AOvVaw3AZoT6_nL2mJogA9B_2bHt&ust=1551476326760202)
+}
+
+button {
+    display: flex;
+    flex-direction: row;
+}
+
+
+

@@ -16,8 +16,8 @@ test('dynamically populate pokedex to browser', assert => {
         <li>
             <p>bulbasaur</p>
             <img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png">
-            <p>49</p>
-            <p>49</p>
+            <p>A:49</p>
+            <p>HP:49</p>
         </li>
     `;
     //act

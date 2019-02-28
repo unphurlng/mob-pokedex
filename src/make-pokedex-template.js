@@ -1,10 +1,10 @@
 export function makePokedexTemplate(pokemon) {
     const html = `
-        <li>
+        <li class="${pokemon.type_1}">
             <p>${pokemon.pokemon}</p>
             <img src="${pokemon.url_image}">
-            <p>${pokemon.attack}</p>
-            <p>${pokemon.hp}</p>
+            <p>A:${pokemon.attack}</p>
+            <p>HP:${pokemon.hp}</p>
         </li>
     `;
     const template = document.createElement('template');
