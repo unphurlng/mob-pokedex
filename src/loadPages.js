@@ -11,20 +11,22 @@ export default function loadPages(pokedexLength, callback) {
     
     
     let currentPageNumber = 1;
-    updatePaging();
-
+    
     function updatePaging() {
         currentPage.textContent = currentPageNumber;
         const pageOptions = {
             currentPage: currentPageNumber,
             perPage: PER_PAGE
         };
+        
         console.log(pageOptions);
+        
         previousButton.disabled = currentPageNumber === 1;
         nextButton.disabled = currentPageNumber === totalPageCount;
-
+        
         callback(pageOptions);
     }
+    updatePaging();
     
     nextButton.addEventListener('click', () => {
         currentPageNumber++;

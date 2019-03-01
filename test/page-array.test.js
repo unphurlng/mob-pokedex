@@ -1,3 +1,5 @@
+import pageArray from '../src/pageArray-function.js';
+
 const test = QUnit.test;
 
 const pokemon = [
@@ -11,12 +13,6 @@ const pokemon = [
     'h',
     'i'
 ];
-
-function pageArray(pokemon, pageOptions) {
-    const startIndex = (pageOptions.currentPageNumber - 1) * (pageOptions.perPage);
-    const endIndex = startIndex + pageOptions.perPage;
-    return pokemon.slice(startIndex, endIndex);
-}
 
 test(' page one of 4 per page', assert => {
     //arrange
